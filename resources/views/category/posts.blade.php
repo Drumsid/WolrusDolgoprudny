@@ -9,11 +9,12 @@
 <link href="{{ asset('assets/frontend/css/categories/responsive.css') }}" rel="stylesheet">
 <style>
     .slider {
-    height: 400px;
-    width: 100%;
-    background-image: url({{ Storage::disk('public')->url('category/' . $category->image) }});
-    background-size: cover;
-}
+        height: 400px;
+        width: 100%;
+        background-image: url({{ Storage::disk('public')->url('category/' . $category->image) }});
+        background-size: cover;
+        background-position: 50% 50%;
+    }
     .favoritePost {
         color: red;
     }

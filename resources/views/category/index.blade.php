@@ -8,6 +8,7 @@
 
 <link href="{{ asset('assets/frontend/css/categories/responsive.css') }}" rel="stylesheet">
 <style>
+
     .favoritePost {
         color: red;
     }
@@ -16,7 +17,7 @@
 
 @section('content')
 <div class="slider display-table center-text">
-    <h1 class="title display-table-cell"><b>All Categories</b></h1>
+    <h1 class="title display-table-cell"><b>Наши служения</b></h1>
 </div><!-- slider -->
 
 <section class="blog-area section">

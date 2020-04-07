@@ -14,7 +14,7 @@
 @endpush
 
 @section('content')
-{{-- <h3>Categories</h3><br> --}}
+
 <div class="main-slider">
     
     <div class="swiper-container position-static" data-slide-effect="slide" data-autoheight="false"
@@ -45,10 +45,19 @@
     </div><!-- swiper-container -->
 
 </div><!-- slider -->
-
+<div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="mt-5">Мы рады каждому человеку, который к нам приходит. Добро пожаловать в церковь «Слово жизни»* в Долгопрудном!</h1>
+          <h2 class="mt-5">Важно, чтобы каждый человек нашел свой духовный дом. И мы будем рады, если таким домом для Вас станет наша церковь*</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 <section class="blog-area section">
     <div class="container">
-        <h2>Last News</h2>
+            <h2 class="header-border">Последние новости</h2>
         <br>
         @if (session('successMsg'))
             <div class="alert alert-success m-t-15" role="alert">
