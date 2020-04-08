@@ -80,6 +80,12 @@
                         <span>All Comments</span>
                     </a>
                 </li>
+                <li class="{{ Request::is('admin/bible') ? 'active' : '' }}">
+                    <a href="{{ route('admin.bible.index') }}">
+                        <i class="material-icons">book</i>
+                        <span>Bible quotes</span>
+                    </a>
+                </li>
                 <li class="{{ Request::is('admin/subscriber') ? 'active' : '' }}">
                     <a href="{{ route('admin.subscriber.index') }}">
                         <i class="material-icons">subscriptions</i>

@@ -55,6 +55,7 @@ Route::group(
         Route::resource('tag', 'TagController');
         Route::resource('category', 'CategoryController');
         Route::resource('post', 'PostController');
+        Route::resource('bible', 'BibleController');
 
         Route::get('pending/post', 'PostController@pending')->name('post.pending');
         Route::put('post/{post}/approve', 'PostController@approval')->name('post.approve');

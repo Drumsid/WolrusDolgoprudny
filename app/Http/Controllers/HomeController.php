@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Category;
 use App\Post;
+use App\Bible_quote;
 
 class HomeController extends Controller
 {
@@ -27,7 +28,8 @@ class HomeController extends Controller
     {
         // return view('home');
         $categories = Category::all();
-        $posts = Post::latest()->approved()->published()->paginate(6);;
-        return view('welcome', compact('categories', 'posts'));
+        $posts = Post::latest()->approved()->published()->paginate(6);
+        $bibleQuote = Bible_quote::all()->random();
+        return view('welcome', compact('categories', 'posts', 'bibleQuote'));
     }
 }

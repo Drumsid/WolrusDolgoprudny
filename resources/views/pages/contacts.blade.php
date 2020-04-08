@@ -73,8 +73,8 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8 text-padding text-center contact-text">
-          <p>+7 999 999 99 99</p>
-          <p>Dolgoprudny@allforjesus.ru</p>
+          <p><a href="tel:+79256518880">8 (925) 651-88-80</a></p>
+          <p><a href="mailto:woldolgoprudny@mail.ru">woldolgoprudny@mail.ru</a></p>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href=""><i class="fab fa-vk"></i></a>
         </div>

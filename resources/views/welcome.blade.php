@@ -66,9 +66,9 @@
         <div class="card bible-block">
             <div class="card-body">
               <h4 class="card-title pb-1"><i>Случайное место писания</i></h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">{{ $bibleQuote->description }}</p>
             
-              <span class="pt-2 pr-3 float-right">Ин 3 - 16</span>
+              <span class="pt-2 pr-3 float-right">{{ $bibleQuote->address }}</span>
             </div>
           </div>
       </div>
