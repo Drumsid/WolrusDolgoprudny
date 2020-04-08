@@ -15,6 +15,10 @@ Route::get('/', 'HomeController@index')->name('mainhome');
 
 Route::post('subscriber', 'SubscriberController@store')->name('subscriber.store');
 
+Route::get('church', 'PageController@church')->name('pages.church');
+Route::get('pastor', 'PageController@pastor')->name('pages.pastor');
+Route::get('schedule_contact', 'PageController@contacts')->name('pages.contacts');
+
 Route::get('categories', 'CategoryController@index')->name('category.index');
 Route::get('category/{slug}', 'PostController@postByCategory')->name('category.posts');
 

@@ -5,7 +5,8 @@
 @push('css')
     <link href="{{ asset('assets/frontend/css/home/styles.css') }}" rel="stylesheet">
 
-    <link href="{{ asset('assets/frontend/css/home/responsive.css') }}" rel="stylesheet">  
+    <link href="{{ asset('assets/frontend/css/home/responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/css/pages/main.css') }}" rel="stylesheet">
     <style>
         .favoritePost {
             color: red;
@@ -15,7 +16,9 @@
 
 @section('content')
 
-<div class="main-slider">
+{{-- новости и слайдер пока убираем до лучших времен --}}
+<!-- category slider -->
+{{-- <div class="main-slider">
     
     <div class="swiper-container position-static" data-slide-effect="slide" data-autoheight="false"
         data-swiper-speed="500" data-swiper-autoplay="10000" data-swiper-margin="0" data-swiper-slides-per-view="4"
@@ -44,18 +47,140 @@
 
     </div><!-- swiper-container -->
 
-</div><!-- slider -->
+</div> --}}
+<!-- category slider -->
+<!-- welcome block -->
 <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col text-center">
+        <div class="col text-center welcome-block">
           <h1 class="mt-5">Мы рады каждому человеку, который к нам приходит. Добро пожаловать в церковь «Слово жизни»* в Долгопрудном!</h1>
           <h2 class="mt-5">Важно, чтобы каждый человек нашел свой духовный дом. И мы будем рады, если таким домом для Вас станет наша церковь*</h2>
         </div>
       </div>
     </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="card bible-block">
+            <div class="card-body">
+              <h4 class="card-title pb-1"><i>Случайное место писания</i></h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            
+              <span class="pt-2 pr-3 float-right">Ин 3 - 16</span>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- welcome block -->
+<div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/1.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Встреча</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/10.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Приезд</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/11.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Старый друг</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/9.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Служение сестер</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/2.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Наше видение</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/3.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Команда</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/4.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Авторитет</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/5.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Адвент</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/6.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Иностранцы</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/7.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Наши</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-border">
+            <img src="{{ asset('assets/frontend/images/8.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body card-body-padding">
+              <h5 class="card-title">Братская</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-custom">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
-<section class="blog-area section">
+<!-- news block -->
+{{-- <section class="blog-area section">
     <div class="container">
             <h2 class="header-border">Последние новости</h2>
         <br>
@@ -87,13 +212,13 @@
 
                                 <ul class="post-footer">
                                     <li>
-                                        {{-- если надо чтоб лайкал любой юзер, убираем условие гость и меняем в роутере post.favorite условие для авторизации, хотя так не сработает, наверно придется делать регистрацию--}}
+                                        
                                         @guest
-                                    <a href="{{ route('post.details', $post->slug) }}" {{-- onclick="fav()" --}}><i class="ion-heart"></i>
+                                    <a href="{{ route('post.details', $post->slug) }}"><i class="ion-heart"></i>
                                             {{ $post->favorite_to_users->count() }}
                                             </a>
                                         @else
-                                        <a class="{{ !Auth::user()->favorite_posts->where('pivot.post_id', $post->id)->count() == 0 ? 'favoritePost' : 'no' }}" href="{{ route('post.details', $post->slug) }}{{-- javascript::void(0) --}}" {{-- onclick="document.getElementById('favorite-form-{{ $post->id }}').submit();" --}}><i class="ion-heart"></i>
+                                        <a class="{{ !Auth::user()->favorite_posts->where('pivot.post_id', $post->id)->count() == 0 ? 'favoritePost' : 'no' }}" href="{{ route('post.details', $post->slug) }}"><i class="ion-heart"></i>
                                                 {{ $post->favorite_to_users->count() }}
                                             </a>
                                         <form method="POST" action="{{ route('post.favorite', $post) }}" id="favorite-form-{{ $post->id }}" style="display: none;">
@@ -113,10 +238,11 @@
 
         </div><!-- row -->
         {{ $posts->links() }}
-        {{-- <b class="load-more-btn" href="#"><b>LOAD MORE</b></b> --}}
+       
 
     </div><!-- container -->
-</section><!-- section -->
+</section> --}}
+<!-- news block -->
 @endsection
 
 @push('js')
