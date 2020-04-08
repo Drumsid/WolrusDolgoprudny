@@ -1,0 +1,24 @@
+.btm-icons {
+    font-size: 25px;
+}
+
+.btm-icons .icon-facebook:hover {
+    color: #3B5998;
+}
+
+.btm-icons .icon-instagram:hover {
+    color: #E04477;
+}
+
+.btm-icons .icon-vk:hover {
+    color: #4D75A3;
+}
+
+.btm-icons .icon-youtube:hover {
+    color: #CC1F1C;
+}
+
+.phone-news {
+    color: #D9A348;
+    font-weight: 700;
+}

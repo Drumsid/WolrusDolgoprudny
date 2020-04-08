@@ -11,28 +11,29 @@
                     <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p> --}}
                     <br>
                     <br>
-                    <ul class="icons">
-                        <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                        <li><a href="#"><i class="ion-social-vimeo-outline"></i></a></li>
-                        <li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li>
+                    <ul class="btm-icons">
+                        <li><a class="icon-facebook" href="https://www.facebook.com/woldolgoprudny/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a class="icon-instagram" href="https://www.instagram.com/woldolgoprudny/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a class="icon-vk" href="https://vk.com/wol_dolgoprudny"><ion-icon name="logo-vk"></ion-icon></a></li>
+                        <li><a class="icon-youtube"href="https://www.youtube.com/channel/UCvFaJA6Ja8gV5sDplTuYsVQ"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                        
                     </ul>
 
                 </div><!-- footer-section -->
             </div><!-- col-lg-4 col-md-6 -->
 
             <div class="col-lg-6 col-md-6">
-                    <div class="footer-section">
+                {{-- <div class="footer-section">
                     <h4 class="title"><b>Наши Служения</b></h4>                  
                     <ul>
                         @foreach ($allCategories as $category)
                     <li><a href="{{ route('category.posts', $category->slug) }}">{{ $category->name }}</a></li>
                         @endforeach
                     </ul>
-                </div><!-- footer-section -->
+                </div> --}}
             </div><!-- col-lg-4 col-md-6 -->
             <div class="col-lg-12 col-md-12 text-center">
+                
                 <p>© 2018 * Централизованная религиозная организация Содружество церквей христиан веры евангельской (пятидесятников) «Слово жизни»</p>
                 <p>ИНН 7719286496, ОГРН 1037739246951, бланк свидетельства Министерства юстиции ЦА 03303, учетный № 0011010266, дата выдачи 13.04.2016г.</p>
             </div>

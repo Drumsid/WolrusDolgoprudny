@@ -81,35 +81,36 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/1.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/12.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
-              <h5 class="card-title">Встреча</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <h5 class="card-title">Пасторы Церкви</h5>
+              <p class="card-text mb-3">Андрей Мицкевич - пастор, проповедник, учитель Библии. Получил образование в Российской Христианской Гуманитарной Академии.</p>
+              <a href="{{ route('pages.pastor') }}" class="btn btn-custom">Подробно</a>
             </div>
           </div>
           <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/10.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/14.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
-              <h5 class="card-title">Приезд</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <h5 class="card-title">Молитва, забота и помощь</h5>
+              <p class="card-text mb-3">Если у Вас есть молитвенная просьба, вопрос, или Вы хотите поделиться с другими людьми свидетельством или благодарением, напишите нам, и мы с радостью ответим на Ваш вопрос, а молитвенная группа и другие члены церкви* поддержат Вас в молитвах.</p>
+              {{-- <a href="#" class="btn btn-custom">Go somewhere</a> --}}
+            <p class="phone-news">Записаться на консультацию можно по телефону <strong><a href="tel:+79256518880">8 (925) 651-88-80</a></strong></p>
             </div>
           </div>
           <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/11.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/17.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
-              <h5 class="card-title">Старый друг</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <h5 class="card-title">Служение старшее поколение.</h5>
+              <p class="card-text mb-3">Жизнь в служении «Старшее поколение» с пенсионным возрастом только начинается! Если Вы молоды сердцем, добро пожаловать в служение «Старшее поколение»! Здесь Вы будете вовлечены в жизнь церкви, окружены заботой и молитвенной поддержкой. Мы рады Вам!</p>
+              {{-- <p class="phone-news">Записаться на консультацию можно по телефону <strong><a href="tel:+79256518880">8 (925) 651-88-80</a></strong></p> --}}
             </div>
           </div>
           <div class="card card-border">
             <img src="{{ asset('assets/frontend/images/9.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Служение сестер</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <p class="card-text mb-3">Сестры собирраються вместе, обсуждают писание, жизенные ситуации, деляться опытом.</p>
+              {{-- <a href="#" class="btn btn-custom">Go somewhere</a> --}}
             </div>
           </div>
         </div>
@@ -118,60 +119,75 @@
             <div class="card card-border">
             <img src="{{ asset('assets/frontend/images/2.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
-              <h5 class="card-title">Наше видение</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <h5 class="card-title">Церковь "Слово Жизни"* Долгопрудный</h5>
+              <p class="card-text mb-3">Мы-христианская церковь,входящая в состав Российского Объединенного Союза Христиан Веры Евангельской (пятидесятников).</p>
+              <a href="{{ route('pages.church') }}" class="btn btn-custom">Подробнее</a>
             </div>
           </div>
           <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/3.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/15.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
-              <h5 class="card-title">Команда</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <h5 class="card-title">Консультация</h5>
+              <p class="card-text mb-3">Нам всем необходима поддержка в трудной жизненной ситуации, которую мы можем получить через душепопечение. Согласно книги Исход 18:13–23 душепопечение — это нахождение суждения Бога по всякому делу в народе Божьем.
+                Наши служители помогут вам найти богоугодное решение в трудных обстоятельствах.</p>
+                <p class="phone-news">Записаться на консультацию можно по телефону <strong><a href="tel:+79256518880">8 (925) 651-88-80</a></strong></p>
             </div>
           </div>
           <div class="card card-border">
             <img src="{{ asset('assets/frontend/images/4.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
-              <h5 class="card-title">Авторитет</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <h5 class="card-title">Старший пастор</h5>
+              <p class="card-text mb-3">Маттс-Ола Исхоел − президент и старший пастор церкви «Слово жизни»* в Москве, первый заместитель председателя Российского Объединенного Союза Христиан Веры Евангельской С.В. Ряховского по межконфессиональным вопросам, председатель Духовного Совета РОСХВЕ. </p>
+              {{-- <a href="#" class="btn btn-custom">Go somewhere</a> --}}
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
             <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/5.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/13.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
-              <h5 class="card-title">Адвент</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <h5 class="card-title">Воскресное Богослужение</h5>
+              <p class="card-text mb-3">Каждое воскресенье в 11-00 мы ждем тебя на богослужении -актуальная проповедь, молитва и прославление наполняют жизнь верой,надеждой и любовью к Богу.</p>
+              <a href="{{ route('pages.contacts') }}" class="btn btn-custom">Подробнее</a>
             </div>
           </div>
           <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/6.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/16.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
-              <h5 class="card-title">Иностранцы</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <h5 class="card-title">«Никто не должен лечь спать голодным»</h5>
+              <p class="card-text mb-3">
+                Мы призваны заботиться о наших братьях и сестрах, которые находятся в трудной ситуации, и помогать им продуктами, одеждой и лекарствами.</p>
+<p>Вы можете принять участие в этом служении, принося с собой в церковь* продукты или добровольным пожертвованием.</p>
+<p class="mt-3 mb-11">Предпочтительные продукты</p>
+<ul class="mb-3">
+  <li>крупы (греча, рис, манка, перловка), макаронные изделия</li>
+  <li>подсолнечное масло, консервы (рыбные, мясные, овощные)</li>
+  <li>сахар, чай, сладости (конфеты, печенье, зефир)</li>
+</ul>
+<p class="mb-3">Внимание! Все продукты должны быть в фирменной заводской упаковке и с длительным сроком хранения.</p>
+<p class="mt-1">Нежелательные продукты</p>
+<ul class="mb-3">
+  <li>продукты с нарушенной (вскрытой) упаковкой, хлеб</li>
+  <li>скоропортящиеся продукты</li>
+</ul>
+<p class="phone-news">Если вам нужно помощь или вы хотите помочь кому то свяжитесь по телефону <strong><a href="tel:+79256518880">8 (925) 651-88-80</a></strong></p>
             </div>
           </div>
-          <div class="card card-border">
+          {{-- <div class="card card-border">
             <img src="{{ asset('assets/frontend/images/7.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
-              <h5 class="card-title">Наши</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Служение прославления</h5>
+              <p class="card-text mb-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-custom">Go somewhere</a>
             </div>
-          </div>
+          </div> --}}
           <div class="card card-border">
             <img src="{{ asset('assets/frontend/images/8.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Братская</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-custom">Go somewhere</a>
+              <p class="card-text mb-3">Братья собираються вместе. Преломляют хлеб, обсуждают вопросы,  ценности. Вместе молятся за нужды.</p>
+              {{-- <a href="#" class="btn btn-custom">Go somewhere</a> --}}
             </div>
           </div>
         </div>

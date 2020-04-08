@@ -44,7 +44,7 @@
       <h4>МЕСТО СОБРАНИЙ</h4>
       <p>г. Долгопрудный, ул. 1-ая Школьная, 3</p>
       <h5>Подробности</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nihil laudantium, optio blanditiis reiciendis eum eligendi at deleniti ipsam. Nemo dolor expedita, deserunt dolorem illum laudantium sint quas quaerat voluptatem?</p>
+      <p>Остановка Пацаева, ориентир магазин "Пятерочка", далее вдоль забора в частном секторе. Подробно можно узнать по телефону <a href="tel:+79256518880">8 (925) 651-88-80</a></p>
     </div>
   </div>
   
@@ -58,7 +58,7 @@
             <h4>МЕСТО СОБРАНИЙ</h4>
             <p>г. Долгопрудный, ул. 1-ая Школьная, 3</p>
             <h5>Подробности</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nihil laudantium, optio blanditiis reiciendis eum eligendi at deleniti ipsam. Nemo dolor expedita, deserunt dolorem illum laudantium sint quas quaerat voluptatem?</p>
+            <p>Остановка Пацаева, ориентир магазин "Пятерочка", далее вдоль забора в частном секторе. Подробно можно узнать по телефону <a href="tel:+79256518880">8 (925) 651-88-80</a></p>
           </div>
           <hr>
         </div>

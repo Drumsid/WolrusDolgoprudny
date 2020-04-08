@@ -19,6 +19,7 @@
 	<link href="{{ asset('assets/frontend/css/swiper.css') }}" rel="stylesheet">
 
 	<link href="{{ asset('assets/frontend/css/ionicons.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/frontend/css/home/main.css') }}" rel="stylesheet">
 
     
     @stack('css')
@@ -37,6 +38,7 @@
 
 <script src="{{ asset('assets/frontend/js/bootstrap.js') }}"></script>
 
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 @stack('js')
 
 
