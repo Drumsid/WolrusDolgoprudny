@@ -12,9 +12,9 @@
         <li><a href="{{ route('pages.church') }}">О церкви</a></li>
         <li><a href="{{ route('pages.pastor') }}">О пасторе</a></li>
         <li><a href="{{ route('pages.contacts') }}">Расписание и контакты</a></li>
-        @guest
+        {{-- @guest
             <li><a href="{{ route('login') }}">Login</a></li>
-        @else
+        @else --}}
         @if (Auth::user()->role->id == 1)
         <li><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
         @endif
