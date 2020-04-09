@@ -209,10 +209,10 @@ p {
 }
 
 .bible-block {
-    width: 97%;
+    /* width: 97%; */
     margin: 0 auto;
     padding: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 4px solid rgba(0, 0, 0, 0.125);
 }
 
 .footer {

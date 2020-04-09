@@ -13,6 +13,10 @@
 
 Route::get('/', 'HomeController@index')->name('mainhome');
 
+Route::get('/testing', 'HomeController@test')->name('test');
+Route::post('/feedback', 'HomeController@feedback')->name('feedback');
+
+
 Route::post('subscriber', 'SubscriberController@store')->name('subscriber.store');
 
 Route::get('church', 'PageController@church')->name('pages.church');

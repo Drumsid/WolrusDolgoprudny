@@ -32,4 +32,19 @@ class HomeController extends Controller
         $bibleQuote = Bible_quote::all()->random();
         return view('welcome', compact('categories', 'posts', 'bibleQuote'));
     }
+
+    public function test()
+    {
+        return view('test');
+    }
+
+    public function feedback(Request $request)
+    {
+        $this->validate($request, [
+            'test' => 'required'
+        ]);
+        $test = $request->test;
+        mail('den-sidnay@yandex.ru', 'My Subject', $test);
+        return redirect()->back()->with('successMsg', 'Email send!!!');
+    }
 }

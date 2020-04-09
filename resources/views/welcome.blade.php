@@ -63,14 +63,17 @@
 <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="card bible-block">
+        <div class="col-lg-12">
+          <div class="card bible-block">
             <div class="card-body">
-              <h4 class="card-title pb-1"><i>Случайное место писания</i></h4>
+              <h4 class="card-title pb-1"><i>Стих из библии</i></h4>
             <p class="card-text">{{ $bibleQuote->description }}</p>
             
               <span class="pt-2 pr-3 float-right">{{ $bibleQuote->address }}</span>
             </div>
           </div>
+        </div>
+        
       </div>
     </div>
 </div>
