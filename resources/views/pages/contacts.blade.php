@@ -14,6 +14,16 @@
 <div class="container-fluid container-contact-foto-bg"><!-- 
     <img src="assets/img/church_bg.png" alt=""> -->
     <div class="container">
+      @if (session('successMsg'))
+      <div class="alert alert-success" role="alert">
+      {{ session('successMsg') }}  
+      </div> 
+  @endif
+  @foreach ($errors->all() as $error)
+      <div class="alert alert-danger" role="alert">
+          {{ $error }}  
+      </div> 
+  @endforeach
       <div class="row">
         <div class="col bg-img-text">
           <h2>Расписание и контакты</h2>
@@ -29,6 +39,10 @@
         <div class="col-md-8 text-padding pastor-head-text">
           <h2>Расписание Служений</h2>
           <p>Каждое воскресенье в 11-00 мы ждем тебя на богослужении -актуальная проповедь, молитва и прославление наполняют жизнь верой,надеждой и любовью к Богу.</p>
+          <p>Если у Вас есть молитвенная просьба, вопрос, или Вы хотите поделиться с другими людьми свидетельством или благодарением, напишите нам, и мы с радостью ответим на Ваш вопрос, а молитвенная группа и другие члены церкви* поддержат Вас в молитвах.</p>
+          <div>
+            <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Заполнить форму</button>
+          </div>  
         </div>
         <div class="col-md-2"></div>
       </div>

@@ -52,7 +52,54 @@
 
                 </div><!-- footer-section -->
             </div><!-- col-lg-4 col-md-6 --> --}}
-
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Форма обратной связи</h5>
+              
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form method="POST" action="{{ route('feedback') }}">
+                          @csrf
+                          <div class="form-group">
+                            <p>Оставьте сообщение или напишите молитвенную нужду!</p>
+                            <label for="exampleFormControlInput1">Введите имя</label>
+                            <input 
+                            name="name" 
+                            type="text" 
+                            class="form-control" 
+                            id="exampleFormControlInput1" 
+                            placeholder="имя" value="{{ old('name') }}"
+                            @if ($errors->has('title'))
+                            <p class="text-danger">{{ $errors->first('name') }}</p>
+                            @endif
+                            >
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput12">Введите email</label>
+                            <input name="email" type="email" class="form-control" id="exampleFormControlInput12" placeholder="name@example.com" value="{{ old('email') }}">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput13">Tелефон в формате 8xxxxxxxxxx</label>
+                            <input name="phone" type="tel" class="form-control" id="exampleFormControlInput13" placeholder="8xxxxxxxxxx" value="{{ old('phone') }}">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Введите сообщение</label>
+                            <textarea name="msg" class="form-control" id="exampleFormControlTextarea1" rows="3">{{ old('msg') }}</textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                    {{-- <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    </div> --}}
+                  </div>
+                </div>
+              </div>
         </div><!-- row -->
     </div><!-- container -->
 </footer>

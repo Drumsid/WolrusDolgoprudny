@@ -51,8 +51,19 @@
 <!-- category slider -->
 <!-- welcome block -->
 <div class="container-fluid">
-    <div class="container">
+    <div class="container mb-3">
+      @if (session('successMsg'))
+      <div class="alert alert-success mt-5" role="alert">
+      {{ session('successMsg') }}  
+      </div> 
+  @endif
+  @foreach ($errors->all() as $error)
+      <div class="alert alert-danger mt-5" role="alert">
+          {{ $error }}  
+      </div> 
+  @endforeach
       <div class="row">
+
         <div class="col text-center welcome-block">
           <h1 class="mt-5">Мы рады каждому человеку, который к нам приходит. Добро пожаловать в церковь «Слово жизни»* в Долгопрудном!</h1>
           <h2 class="mt-5">Важно, чтобы каждый человек нашел свой духовный дом. И мы будем рады, если таким домом для Вас станет наша церковь*</h2>
@@ -97,8 +108,11 @@
               <h5 class="card-title">Молитва, забота и помощь</h5>
               <p class="card-text mb-3">Если у Вас есть молитвенная просьба, вопрос, или Вы хотите поделиться с другими людьми свидетельством или благодарением, напишите нам, и мы с радостью ответим на Ваш вопрос, а молитвенная группа и другие члены церкви* поддержат Вас в молитвах.</p>
               {{-- <a href="#" class="btn btn-custom">Go somewhere</a> --}}
-            <p class="phone-news">Записаться на консультацию можно по телефону <strong><a href="tel:+79256518880">8 (925) 651-88-80</a></strong></p>
-            </div>
+            <p class="phone-news">Записаться на консультацию можно по телефону <strong><a href="tel:+79256518880">8 (925) 651-88-80</a></strong> или нажать на кнопку ниже.</p>
+            <div>
+              <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Нужна молитва?</button>
+            </div>  
+          </div>
           </div>
           <div class="card card-border">
             <img src="{{ asset('assets/frontend/images/17.jpg') }}" class="card-img-top" alt="...">
