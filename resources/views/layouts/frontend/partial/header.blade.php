@@ -7,7 +7,15 @@
 
         <ul class="main-menu visible-on-click" id="main-menu">
         <li><a href="{{ route('mainhome') }}">Главная</a></li>
-        {{-- <li><a href="{{ route('post.index') }}">Все новости</a></li> --}}
+        @guest
+       
+        @else
+        @if (Auth::user())
+        <li><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+        @endif
+        @endguest
+        
+        <li><a href="{{ route('post.index') }}">Все новости</a></li>
         {{-- <li><a href="{{ route('category.index') }}">Служения</a></li> --}}
         <li><a href="{{ route('pages.church') }}">О церкви</a></li>
         <li><a href="{{ route('pages.pastor') }}">О пасторе</a></li>
