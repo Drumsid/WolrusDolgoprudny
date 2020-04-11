@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomeController@index')->name('mainhome');
 
-Route::get('/testing', 'HomeController@test')->name('test');
+Route::get('/testing', 'HomeController@test')->name('test')->middleware('test');
 Route::post('/feedback', 'HomeController@feedback')->name('feedback');
 
 
@@ -23,13 +23,13 @@ Route::get('church', 'PageController@church')->name('pages.church');
 Route::get('pastor', 'PageController@pastor')->name('pages.pastor');
 Route::get('schedule_contact', 'PageController@contacts')->name('pages.contacts');
 
-Route::get('categories', 'CategoryController@index')->name('category.index');
-Route::get('category/{slug}', 'PostController@postByCategory')->name('category.posts');
+Route::get('categories', 'CategoryController@index')->name('category.index')->middleware('test'); // на вермя разработки повесил middleware
+Route::get('category/{slug}', 'PostController@postByCategory')->name('category.posts')->middleware('test'); // на вермя разработки повесил middleware
 
-Route::get('tag/{slug}', 'PostController@postByTag')->name('tag.posts');
+Route::get('tag/{slug}', 'PostController@postByTag')->name('tag.posts')->middleware('test'); // на вермя разработки повесил middleware
 
-Route::get('posts', 'PostController@index')->name('post.index');
-Route::get('post/{slug}', 'PostController@details')->name('post.details');
+Route::get('posts', 'PostController@index')->name('post.index')->middleware('test'); // на вермя разработки повесил middleware
+Route::get('post/{slug}', 'PostController@details')->name('post.details')->middleware('test'); // на вермя разработки повесил middleware
 
 Route::get('search', 'SearchController@search')->name('search');
 

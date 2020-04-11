@@ -3,13 +3,36 @@
 @section('title', 'reset')
 
 @push('css')
-    <link href="{{ asset('assets/frontend/css/auth/styles.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/frontend/css/home/styles.css') }}" rel="stylesheet">
 
-    <link href="{{ asset('assets/frontend/css/auth/responsive.css') }}" rel="stylesheet">    
+<link href="{{ asset('assets/frontend/css/home/responsive.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/frontend/css/pages/main.css') }}" rel="stylesheet">
+<style>
+    .middleauth {
+        height: 25%;
+        background-color: #8a2be270;
+        color: white;
+        font-size: 20px;
+        text-shadow: 3px 3px rgba(34, 33, 32, 0.76);
+    }
+    .auth-wrap {
+    text-align: left;
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .auth-wrap {
+            text-align: center;
+            padding: 50px 20px;
+        }
+    }
+</style>   
 @endpush
 
 @section('content')
-<div class="slider display-table center-text">
+<div class="slider display-table center-text middleauth">
     <h1 class="title display-table-cell"><b>Reset password</b></h1>
 </div><!-- slider -->
 <br>
@@ -18,9 +41,9 @@
     <div class="row justify-content-center">
 
         <div class="col-lg-8 col-md-12">
-            <div class="post-wrapper">
+            <div class="post-wrapper auth-wrap">
 <br>
-<p>Reset password</p>
+<p class="ml-3">Сбросить пароль</p>
 <br>
 <br>
 
@@ -50,7 +73,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
+                                    {{ __('Сбросить пароль') }}
                                 </button>
                             </div>
                         </div>
