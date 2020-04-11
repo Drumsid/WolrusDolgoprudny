@@ -126,7 +126,7 @@
             <img src="{{ asset('assets/frontend/images/9.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Служение сестер</h5>
-              <p class="card-text mb-3">Сестры собирраються вместе, обсуждают писание, жизенные ситуации, деляться опытом.</p>
+              <p class="card-text mb-3">Сестры собираются вместе, обсуждают писание, жизенные ситуации, деляться опытом.</p>
               {{-- <a href="#" class="btn btn-custom">Go somewhere</a> --}}
             </div>
           </div>
@@ -203,7 +203,7 @@
             <img src="{{ asset('assets/frontend/images/8.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Братская</h5>
-              <p class="card-text mb-3">Братья собираються вместе. Преломляют хлеб, обсуждают вопросы,  ценности. Вместе молятся за нужды.</p>
+              <p class="card-text mb-3">Братья собираются вместе. Преломляют хлеб, обсуждают вопросы,  ценности. Вместе молятся за нужды.</p>
               {{-- <a href="#" class="btn btn-custom">Go somewhere</a> --}}
             </div>
           </div>

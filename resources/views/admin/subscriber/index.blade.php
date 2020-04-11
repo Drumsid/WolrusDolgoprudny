@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        All Subscriber
+                        Все подписчики
                         <span class="badge bg-green">{{ $subscribers->count() }}</span>
                     </h2>
                 </div>
@@ -34,20 +34,20 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>Count</th>
+                                    <th>№</th>
                                     <th>Email</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
+                                    <th>Создан</th>
+                                    <th>Обновлен</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Count</th>
+                                    <th>№</th>
                                     <th>Email</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
+                                    <th>Создан</th>
+                                    <th>Обновлен</th>
+                                    <th>Действия</th>
                                 </tr>
                             </tfoot>
 

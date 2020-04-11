@@ -16,7 +16,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                    add new post
+                        Добавить Пост
                     </h2>
                     @if ($errors->any())
                         @foreach ($errors->all() as $error)
@@ -32,12 +32,13 @@
                         <div class="form-group form-float">
                             <div class="form-line">
                                 <input type="text" id="title" class="form-control {{ $errors->has('name') ? 'border-danger' : ''}}" name="title" value="{{ old('name') }}">
-                                <label class="form-label">Post Title</label>
+                                <label class="form-label">Заголовок</label>
                             </div>
                         </div>
                         <div class="form-group form-float">
+                            <p>Фото должно быть размером 1600рх на 1066рх (если фото получается коряво, пишем мне)</p>
                             <div class="form-line">
-                                <label for="image">Image</label>
+                                <label for="image">Картинка</label>
                                 <input type="file" id="image" class="form-control {{ $errors->has('name') ? 'border-danger' : ''}}" name="image" value="{{ old('image') }}">
                                 
                             </div>
@@ -45,7 +46,7 @@
                         <div class="form-group form-float">
                             <div class="form-line">  
                                 <input type="checkbox" id="publish" class="filled-in" name="status" value="1">
-                                <label for="publish">Publish</label>
+                                <label for="publish">Опубликовать</label>
                             </div>
                         </div>
                 </div>
@@ -55,14 +56,14 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                    Categories and Tags
+                        Служения и Тэги
                     </h2>
                 </div>
                 <div class="body">
 
                         <div class="form-group form-float">
                         <div class="form-line {{ $errors->has('categories') ? 'focused error' : '' }}">
-                                <label for="category">Select Category</label>
+                                <label for="category">Выбрать Служение</label>
                                 <select name="categories[]" id="category" class="form-control show-tick" data-live-search="true" multiple>
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}"> {{ $category->name }} </option>
@@ -73,7 +74,7 @@
                         </div>
                         <div class="form-group form-float">
                             <div class="form-line {{ $errors->has('categories') ? 'focused error' : '' }}">
-                                <label for="tag">Select Tag</label>
+                                <label for="tag">Выбрать Тэг</label>
                                 <select name="tags[]" id="tag" class="form-control show-tick" data-live-search="true" multiple>
                                     @foreach ($tags as $tag)
                                         <option value="{{ $tag->id }}"> {{ $tag->name }} </option>
@@ -81,8 +82,8 @@
                                 </select>
                             </div>
                         </div>
-                    <a class="btn btn-danger m-t-15 waves-effect" href="{{ route('author.post.index') }}">BACK</a>
-                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">Add</button>
+                    <a class="btn btn-danger m-t-15 waves-effect" href="{{ route('author.post.index') }}">НАЗАД</a>
+                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">Добавить</button>
 
                 </div>
             </div>
@@ -92,7 +93,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header">
-                    Post body
+                    Тело статьи
                 </div>
                 
                 <div class="body">

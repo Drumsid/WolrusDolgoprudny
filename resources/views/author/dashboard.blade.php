@@ -9,7 +9,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="block-header">
-        <h2>DASHBOARD</h2>
+        <h2>Админ панель</h2>
     </div>
 
     <!-- Widgets -->
@@ -20,7 +20,7 @@
                     <i class="material-icons">playlist_add_check</i>
                 </div>
                 <div class="content">
-                    <div class="text">Total Posts</div>
+                    <div class="text">Все посты</div>
                 <div class="number count-to" data-from="0" data-to="{{ $posts->count() }}" data-speed="15" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                     <i class="material-icons">favorite</i>
                 </div>
                 <div class="content">
-                    <div class="text">Total Favorite Posts</div>
+                    <div class="text">Любимые посты (лайки)</div>
                     <div class="number count-to" data-from="0" data-to="{{ Auth::user()->favorite_posts()->count() }}" data-speed="1000" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <i class="material-icons">forum</i>
                 </div>
                 <div class="content">
-                    <div class="text">Pending posts</div>
+                    <div class="text">Посты ожидают публикации</div>
                 <div class="number count-to" data-from="0" data-to="{{ $total_pending_posts }}" data-speed="1000" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                     <i class="material-icons">person_add</i>
                 </div>
                 <div class="content">
-                    <div class="text">All views</div>
+                    <div class="text">Все просмотры</div>
                 <div class="number count-to" data-from="0" data-to="{{ $all_views }}" data-speed="1000" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -66,19 +66,19 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="card">
                 <div class="header">
-                    <h2>Top 5 popular posts</h2>
+                    <h2>Топ 5 популярных постов</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
                         <table class="table table-hover dashboard-task-infos">
                             <thead>
                                 <tr>
-                                    <th>Rank List</th>
-                                    <th>Title</th>
-                                    <th>Views</th>
-                                    <th>Favorite</th>
-                                    <th>Comments</th>
-                                    <th>Status</th>
+                                    <th>№</th>
+                                    <th>Заголовок</th>
+                                    <th>Просмотры</th>
+                                    <th>Лайки</th>
+                                    <th>Комментарии</th>
+                                    <th>Статус</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -91,9 +91,9 @@
                                         <td>{{ $post->comments_count }}</td>
                                         <td>
                                             @if ($post->status)
-                                                <span class="label bg-green">Published</span>
+                                                <span class="label bg-green">Опубликовано</span>
                                             @else
-                                            <span class="label bg-red">Pending</span>
+                                            <span class="label bg-red">Не опубликовано</span>
                                             @endif
                                         </td>
                                     </tr>    

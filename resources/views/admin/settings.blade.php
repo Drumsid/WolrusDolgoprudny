@@ -30,7 +30,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        Settings
+                        Настройки
                     </h2>
                 </div>
                 <div class="body">
@@ -38,12 +38,12 @@
                     <ul class="nav nav-tabs tab-nav-right" role="tablist">
                         <li role="presentation" class="active">
                             <a href="#home_only_icon_title" data-toggle="tab">
-                                <i class="material-icons">face</i> Update profile
+                                <i class="material-icons">face</i> Обновить профиль
                             </a>
                         </li>
                         <li role="presentation">
                             <a href="#profile_only_icon_title" data-toggle="tab">
-                                <i class="material-icons">change_history</i> Password change
+                                <i class="material-icons">change_history</i> Изменить пароль
                             </a>
                         </li>
                     </ul>
@@ -63,7 +63,7 @@
                                             @method('PUT')   
                                             <div class="row clearfix">
                                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                                    <label for="name">Name</label>
+                                                    <label for="name">Имя</label>
                                                 </div>
                                                 <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                                     <div class="form-group">
@@ -87,7 +87,7 @@
                                             </div>
                                             <div class="row clearfix">
                                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                                    <label for="image">Image</label>
+                                                    <label for="image">Картинка</label>
                                                 </div>
                                                 <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                                     <div class="form-group">
@@ -99,7 +99,7 @@
                                             </div>
                                             <div class="row clearfix">
                                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                                    <label for="about">About</label>
+                                                    <label for="about">Описание</label>
                                                 </div>
                                                 <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                                     <div class="form-group">
@@ -111,7 +111,7 @@
                                             </div>
                                                 <div class="row clearfix">
                                                     <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
-                                                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">update</button>
+                                                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">Обновить</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -126,7 +126,7 @@
                                 @method('PUT')   
                                 <div class="row clearfix">
                                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                        <label for="old_password">Old password</label>
+                                        <label for="old_password">Старый пароль</label>
                                     </div>
                                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                         <div class="form-group">
@@ -138,7 +138,7 @@
                                 </div>
                                 <div class="row clearfix">
                                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                        <label for="password">New password</label>
+                                        <label for="password">Новый пароль</label>
                                     </div>
                                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                         <div class="form-group">
@@ -150,7 +150,7 @@
                                 </div>
                                 <div class="row clearfix">
                                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                        <label for="confirm_password">Confirm password</label>
+                                        <label for="confirm_password">Подтвердить</label>
                                     </div>
                                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                         <div class="form-group">

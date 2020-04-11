@@ -26,7 +26,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        All Pending Posts
+                        Посты с лайками
                         <span class="badge bg-green">{{ $posts->count() }}</span>
                     </h2>
                 
@@ -36,24 +36,24 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
+                                    <th>№</th>
+                                    <th>Заголовок</th>
+                                    <th>Автор</th>
                                     <th><i class="material-icons">favorite</i></th>
                                     <th><i class="material-icons">comment</i></th>
                                     <th><i class="material-icons">visibility</i></th>
-                                    <th>Action</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
+                                    <th>№</th>
+                                    <th>Заголовок</th>
+                                    <th>Автор</th>
                                     <th><i class="material-icons">favorite</i></th>
                                     <th><i class="material-icons">comment</i></th>
                                     <th><i class="material-icons">visibility</i></th>
-                                    <th>Action</th>
+                                    <th>Действия</th>
                                 </tr>
                             </tfoot>
 

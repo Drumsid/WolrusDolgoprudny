@@ -161,7 +161,7 @@
 
 
 <section class="recomended-area section">
-    <h4 style="margin-bottom: 10px;">Random posts</h4>
+    {{-- <h4 style="margin-bottom: 10px;">Random posts</h4> --}}
     <div class="container">
         <div class="row">
             @foreach ($randomPosts as $randomPost)
@@ -202,7 +202,7 @@
 
 <section class="comment-section">
     <div class="container">
-        <h4><b>POST COMMENT</b></h4>
+        <h4><b>Добавить комментарий</b></h4>
         <div class="row">
             @if ($errors->any())
 
@@ -215,7 +215,7 @@
                         </div> 
                     @endforeach
                     @guest
-                        <p>For post a new comment. You need  to login first. <br><br><a class="btn btn-primary" href="{{ route('login') }}">Login</a></p>
+                        <p>Для добвления комментария Вам нужно авторизоватся. <br><br><a class="btn btn-primary" href="{{ route('login') }}">Login</a></p>
                     @else
                         <form method="post" action="{{ route('comment.store', $post) }}">
                     @csrf
@@ -225,7 +225,7 @@
                                         placeholder="Enter your comment" aria-required="true" aria-invalid="false"></textarea >
                                 </div><!-- col-sm-12 -->
                                 <div class="col-sm-12">
-                                    <button class="submit-btn" type="submit" id="form-submit"><b>POST COMMENT</b></button>
+                                    <button class="submit-btn" type="submit" id="form-submit"><b>Отпрваить</b></button>
                                 </div><!-- col-sm-12 -->
 
                             </div><!-- row -->
@@ -234,7 +234,7 @@
 
                 </div><!-- comment-form -->
 
-                <h4></a><b>COMMENTS({{ $post->comments->count() }})</b></h4>
+                <h4></a><b>Комментарии({{ $post->comments->count() }})</b></h4>
                 @foreach ($post->comments as $comment)
             <div id="comments{{$comment->id}}" class="commnets-area ">
 
@@ -261,7 +261,7 @@
                 @endforeach
 
                 @if ($post->comments->count())
-                    <a class="more-comment-btn" href="#"><b>VIEW MORE COMMENTS</a>
+                    {{-- <a class="more-comment-btn" href="#"><b>VIEW MORE COMMENTS</a> --}}
                 @else
                 <div class="commnets-area">
                     <p>No comments. Post first comment!!!</p>

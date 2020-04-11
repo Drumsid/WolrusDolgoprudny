@@ -11,7 +11,7 @@
     <div class="block-header">
     <a class="btn btn-primary waves-effect" href="{{ route('admin.bible.create') }}">
     <i class="material-icons">add</i>
-    <span> Add New Bible quote </span>
+    <span> Добавить цитату </span>
     </a>
     @if (session('successMsg'))
         <div class="alert alert-success m-t-15" role="alert">
@@ -29,7 +29,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        All Catigories
+                        Все цитаты
                         <span class="badge bg-green">{{ $quotes->count() }}</span>
                     </h2>
                 </div>
@@ -38,18 +38,18 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Description</th>
-                                    <th>Addres</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Описание</th>
+                                    <th>Место писания</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Description</th>
-                                    <th>Addres</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Описание</th>
+                                    <th>Место писания</th>
+                                    <th>Действия</th>
                                 </tr>
                             </tfoot>
 

@@ -21,6 +21,6 @@ class CommentController extends Controller
             $commentDelete->delete();
         }
 
-        return redirect(route('admin.comments.index'))->with('successMsg', 'Comment deleted!!!');
+        return redirect(route('admin.comments.index'))->with('successMsg', 'Комментарий удален!!!');
     }
 }

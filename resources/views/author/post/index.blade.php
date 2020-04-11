@@ -11,7 +11,7 @@
     <div class="block-header">
     <a class="btn btn-primary waves-effect" href="{{ route('author.post.create') }}">
     <i class="material-icons">add</i>
-    <span> Add New Post </span>
+    <span> Добавить пост </span>
     </a>
     @if (session('successMsg'))
         <div class="alert alert-success m-t-15" role="alert">
@@ -29,7 +29,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        All Posts
+                        Количество постов
                         <span class="badge bg-green">{{ $posts->count() }}</span>
                     </h2>
                 
@@ -39,28 +39,28 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
+                                    <th>№</th>
+                                    <th>Заголовок</th>
+                                    <th>Автор</th>
                                     <th><i class="material-icons">visibility</i></th>
-                                    <th>In Approved</th>
-                                    <th>Status</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
+                                    <th>Одобрен</th>
+                                    <th>Статус</th>
+                                    <th>Создан</th>
+                                    <th>Обновлен</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
+                                    <th>№</th>
+                                    <th>Заголовок</th>
+                                    <th>Автор</th>
                                     <th><i class="material-icons">visibility</i></th>
-                                    <th>In Approved</th>
-                                    <th>Status</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
+                                    <th>Одобрен</th>
+                                    <th>Статус</th>
+                                    <th>Создан</th>
+                                    <th>Обновлен</th>
+                                    <th>Действия</th>
                                 </tr>
                             </tfoot>
 
@@ -73,16 +73,16 @@
                                         <td><span class="badge bg-blue">{{ $post->view_count }}</span></td>
                                         <td>
                                             @if ($post->is_approved)
-                                                <i class="badge bg-blue">Approved</i>
+                                                <i class="badge bg-blue">Одобрен</i>
                                             @else
-                                                <i class="badge bg-pink">Pending</i>
+                                                <i class="badge bg-pink">Не одобрен</i>
                                             @endif
                                         </td>
                                         <td>
                                             @if ($post->status)
-                                                <i class="badge bg-blue">Published</i>
+                                                <i class="badge bg-blue">Опубликован</i>
                                             @else
-                                                <i class="badge bg-pink">Pending</i>
+                                                <i class="badge bg-pink">Не опубликован</i>
                                             @endif
                                         </td>
                                         <td>{{ $post->created_at }}</td>

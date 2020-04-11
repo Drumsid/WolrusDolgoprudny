@@ -24,7 +24,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        All Authors
+                       Все авторы
                         <span class="badge bg-green">{{ $authors->count() }}</span>
                     </h2>
                 </div>
@@ -33,24 +33,24 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Name</th>
-                                    <th>Posts</th>
-                                    <th>Coments</th>
-                                    <th>Favorit posts count</th>
-                                    <th>Created At</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Постов</th>
+                                    <th>Комментариев</th>
+                                    <th>Лайков</th>
+                                    <th>Создан</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Name</th>
-                                    <th>Posts</th>
-                                    <th>Coments</th>
-                                    <th>Favorit posts count</th>
-                                    <th>Created At</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Постов</th>
+                                    <th>Комментариев</th>
+                                    <th>Лайков</th>
+                                    <th>Создан</th>
+                                    <th>Действия</th>
                                 </tr>
                             </tfoot>
 

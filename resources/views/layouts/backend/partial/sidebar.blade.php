@@ -10,11 +10,11 @@
             <div class="btn-group user-helper-dropdown">
                 <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                 <ul class="dropdown-menu pull-right">
-                    <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                    <li><a href="javascript:void(0);"><i class="material-icons">person</i>Профиль</a></li>
                     <li><a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">
-                     <i class="material-icons">input</i>Sign Out
+                     <i class="material-icons">input</i>Выйти
                  </a>
 
                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -29,82 +29,82 @@
     <!-- Menu -->
     <div class="menu">
         <ul class="list">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">Главное меню</li>
             @if (Request::is('admin*'))
                 <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}">
                     <a href="{{ route('admin.dashboard') }}">
                         <i class="material-icons">dashboard</i>
-                        <span>Dashboard</span>
+                        <span>Админ панель</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/author*') ? 'active' : '' }}">
                     <a href="{{ route('admin.author.index') }}">
                         <i class="material-icons">person</i>
-                        <span>All Authors</span>
+                        <span>Все авторы</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/tag*') ? 'active' : '' }}">
                     <a href="{{ route('admin.tag.index') }}">
                         <i class="material-icons">label</i>
-                        <span>Tags</span>
+                        <span>Тэги</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/category*') ? 'active' : '' }}">
                     <a href="{{ route('admin.category.index') }}">
                         <i class="material-icons">apps</i>
-                        <span>Category</span>
+                        <span>Служения</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/post*') ? 'active' : '' }}">
                     <a href="{{ route('admin.post.index') }}">
                         <i class="material-icons">library_books</i>
-                        <span>Posts</span>
+                        <span>Посты</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/pending/post') ? 'active' : '' }}">
                     <a href="{{ route('admin.post.pending') }}">
                         <i class="material-icons">create</i>
-                        <span>Pending Posts</span>
+                        <span>Посты ожидают публикации</span>
                         <span class="badge bg-green {{ $postApprove->count() == 0 ? 'my-d-none' : '' }}">{{ $postApprove->count() }}</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/favorite') ? 'active' : '' }}">
                     <a href="{{ route('admin.favorite.index') }}">
                         <i class="material-icons">favorite</i>
-                        <span>Favorite Posts</span>
+                        <span>Любимые посты (лайки)</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/comments') ? 'active' : '' }}">
                     <a href="{{ route('admin.comments.index') }}">
                         <i class="material-icons">comment</i>
-                        <span>All Comments</span>
+                        <span>Все комментарии</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/bible') ? 'active' : '' }}">
                     <a href="{{ route('admin.bible.index') }}">
                         <i class="material-icons">book</i>
-                        <span>Bible quotes</span>
+                        <span>Цитаты Библии</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/subscriber') ? 'active' : '' }}">
                     <a href="{{ route('admin.subscriber.index') }}">
                         <i class="material-icons">subscriptions</i>
-                        <span>All Subscriber</span>
+                        <span>Все подписчики <br> (не используем пока)</span>
                     </a>
                 </li>
 
-                <li class="header">System</li>
+                <li class="header">Системные настройки</li>
                 <li class="{{ Request::is('admin/settings') ? 'active' : '' }}">
                     <a href="{{ route('admin.settings') }}">
                         <i class="material-icons">settings</i>
-                        <span>User settings</span>
+                        <span>Настройки пользователя</span>
                     </a>
                 </li>
                 <li><a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">
                      <i class="material-icons">input</i>
-                     <span>Sign Out</span>
+                     <span>Выйти</span>
                  </a>
 
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -116,39 +116,39 @@
                 <li class="{{ Request::is('author/dashboard') ? 'active' : '' }}">
                     <a href="{{ route('author.dashboard') }}">
                         <i class="material-icons">dashboard</i>
-                        <span>Dashboard</span>
+                        <span>Админ панель</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('author/favorite') ? 'active' : '' }}">
                     <a href="{{ route('author.favorite.index') }}">
                         <i class="material-icons">favorite</i>
-                        <span>Favorite Posts</span>
+                        <span>Любимые посты (лайки)</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('author/post*') ? 'active' : '' }}">
                     <a href="{{ route('author.post.index') }}">
                         <i class="material-icons">library_books</i>
-                        <span>Posts</span>
+                        <span>Посты</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('author/comments') ? 'active' : '' }}">
                     <a href="{{ route('author.comments.index') }}">
                         <i class="material-icons">comment</i>
-                        <span>All Comments</span>
+                        <span>Комментарии</span>
                     </a>
                 </li>
-                <li class="header">System</li>
+                <li class="header">Системные настройки</li>
                 <li class="{{ Request::is('author/settings') ? 'active' : '' }}">
                     <a href="{{ route('author.settings') }}">
                         <i class="material-icons">settings</i>
-                        <span>User settings</span>
+                        <span>Настройки пользователя</span>
                     </a>
                 </li>
                 <li><a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                     <i class="material-icons">input</i>
-                    <span>Sign Out</span>
+                    <span>Выйти</span>
                 </a>
 
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -163,7 +163,7 @@
     <!-- Footer -->
     <div class="legal">
         <div class="copyright">
-            &copy; 2019 - 2020 <a href="javascript:void(0);">Laravel - blog JS</a>.
+            &copy; 2019 - {{ date('Y') }} <a href="javascript:void(0);"> Слово жизни Долгопрудный</a>.
         </div>
         <div class="version">
             <b>Version: </b> 1.0.5

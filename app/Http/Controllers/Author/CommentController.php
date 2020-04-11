@@ -13,7 +13,7 @@ class CommentController extends Controller
     {
         $user = Auth::user();
         $comments = $user->comments()->latest()->get();
-        return view('admin.comments.index', compact('comments'));
+        return view('author.comments.index', compact('comments'));
     }
 
     public function destroy(Comment $comment)

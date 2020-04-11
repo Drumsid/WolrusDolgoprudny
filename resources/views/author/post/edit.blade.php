@@ -17,7 +17,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                    edit post
+                        Редактировать пост
                     </h2>
                     @if ($errors->any())
                         @foreach ($errors->all() as $error)
@@ -33,18 +33,19 @@
                         <div class="form-group form-float">
                             <div class="form-line">
                                 <input type="text" id="title" class="form-control {{ $errors->has('name') ? 'border-danger' : ''}}" name="title" value="{{ $post->title }}">
-                                <label class="form-label">Post Title</label>
+                                <label class="form-label">Заголовок</label>
                             </div>
                         </div>
                         <div class="form-group form-float">
                             <hr>
                             <div>
-                                <p>Current image</p>
+                                <p>Текущая картинка</p>
                                 <img class="img-responsive thumbnail" src="{{ Storage::disk('public')
                             ->url('post/' . $post->image) }}" alt="" height="120" width="120">
                             </div>
                             <div class="form-line">
-                                <label for="image">Image</label>
+                                <p>Фото должно быть размером 1600рх на 1066рх (если фото получается коряво, пишем мне)</p>
+                                <label for="image">Новая картинка</label>
                                 <input type="file" id="image" class="form-control {{ $errors->has('name') ? 'border-danger' : ''}}" name="image" value="{{ $post->image }}">
                                 
                             </div>
@@ -53,7 +54,7 @@
                             <div class="form-line">  
                                 <input type="checkbox" id="publish" class="filled-in" name="status" value="1"
                                 {{ $post->status == true ? 'checked' : ''}}>
-                                <label for="publish">Publish</label>
+                                <label for="publish">Опубликовать</label>
                             </div>
                         </div>
                 </div>
@@ -63,14 +64,14 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                    edit Categories and Tags
+                        Редактировать Служение и Тэги поста
                     </h2>
                 </div>
                 <div class="body">
 
                         <div class="form-group form-float">
                         <div class="form-line">
-                                <label for="category">Select Category</label>
+                                <label for="category">Выбрать Служение</label>
                                 <select name="categories[]" id="category" class="form-control show-tick" data-live-search="true" multiple>
                                     @foreach ($categories as $category)
                                     <option
@@ -85,7 +86,7 @@
                         </div>
                         <div class="form-group form-float">
                             <div class="form-line {{ $errors->has('categories') ? 'focused error' : '' }}">
-                                <label for="tag">Select Tag</label>
+                                <label for="tag">Выбрать Тэг</label>
                                 <select name="tags[]" id="tag" class="form-control show-tick" data-live-search="true" multiple>
                                     @foreach ($tags as $tag)
                                         <option 
@@ -97,8 +98,8 @@
                                 </select>
                             </div>
                         </div>
-                    <a class="btn btn-danger m-t-15 waves-effect" href="{{ route('author.post.index') }}">BACK</a>
-                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">edit</button>
+                    <a class="btn btn-danger m-t-15 waves-effect" href="{{ route('author.post.index') }}">НАЗАД</a>
+                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">Добавить</button>
 
                 </div>
             </div>

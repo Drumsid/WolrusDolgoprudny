@@ -94,7 +94,7 @@ class PostController extends Controller
                 ->notify(new NewPostNotify($post));
         }
 
-        return redirect(route('admin.post.index'))->with('successMsg', 'Post succesfull added!!!');
+        return redirect(route('admin.post.index'))->with('successMsg', 'пост успешно добвален!!!');
     }
 
     /**
@@ -173,7 +173,7 @@ class PostController extends Controller
         // $post->tags()->detach();
         $post->tags()->sync(request('tags'));
 
-        return redirect(route('admin.post.index'))->with('successMsg', 'Post updated!!!');
+        return redirect(route('admin.post.index'))->with('successMsg', 'Пост обновлен!!!');
     }
 
     public function pending()
@@ -198,7 +198,7 @@ class PostController extends Controller
         //         ->notify(new NewPostNotify($post));
         // }
 
-        return redirect(route('admin.post.pending'))->with('successMsg', 'Post approved!!!');
+        return redirect(route('admin.post.pending'))->with('successMsg', 'Пост одобрен!!!');
     }
     /**
      * Remove the specified resource from storage.
@@ -218,7 +218,7 @@ class PostController extends Controller
             $this->deleteImage('post/', $post->image);
         }
 
-        return redirect(route('admin.post.index'))->with('successMsg', 'Post was deleted!!!');
+        return redirect(route('admin.post.index'))->with('successMsg', 'Пост удален!!!');
     }
 
     public function dirExists($dir)

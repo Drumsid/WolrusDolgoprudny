@@ -11,7 +11,7 @@
     <div class="block-header">
     <a class="btn btn-primary waves-effect" href="{{ route('admin.tag.create') }}">
     <i class="material-icons">add</i>
-    <span> Add New Tag </span>
+    <span>Добавить Тэг</span>
     </a>
     @if (session('successMsg'))
         <div class="alert alert-success m-t-15" role="alert">
@@ -29,7 +29,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        All Tags
+                        Все Тэги
                         <span class="badge bg-green">{{ $tags->count() }}</span>
                     </h2>
                 </div>
@@ -38,22 +38,22 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Name</th>
-                                    <th>Post Count</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Количество постов</th>
+                                    <th>Создан</th>
+                                    <th>Обновлен</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Name</th>
-                                    <th>Post Count</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Количество постов</th>
+                                    <th>Создан</th>
+                                    <th>Обновлен</th>
+                                    <th>Действия</th>
                                 </tr>
                             </tfoot>
 

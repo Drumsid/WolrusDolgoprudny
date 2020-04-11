@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        All Comments
+                        Все комментарии
                         <span class="badge bg-green">{{ $comments->count() }}</span>
                     </h2>
                 </div>
@@ -34,16 +34,16 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>Comments info</th>
-                                    <th>Post info</th>
-                                    <th>Action</th>
+                                    <th>Комментарий</th>
+                                    <th>Пост</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Comments info</th>
-                                    <th>Post info</th>
-                                    <th>Action</th>
+                                    <th>Комментарий</th>
+                                    <th>Пост</th>
+                                    <th>Действия</th>
                                 </tr>
                             </tfoot>
 
@@ -62,7 +62,7 @@
                                                     <small>{{ $comment->created_at->toFormattedDateString() }}</small>
                                                     </h4>
                                                 <p>{{ $comment->comment }}</p>
-                                                <a target="/blank" href="{{ route('post.details', $comment->post->slug . '#comments' . $comment->id) }}">Replay</a>
+                                                <a target="/blank" href="{{ route('post.details', $comment->post->slug . '#comments' . $comment->id) }}">Посмотреть</a>
                                                 </div>
                                             </div>
                                         </td>

@@ -11,7 +11,7 @@
     <div class="block-header">
     <a class="btn btn-primary waves-effect" href="{{ route('admin.category.create') }}">
     <i class="material-icons">add</i>
-    <span> Add New Category </span>
+    <span>Добавить Служение</span>
     </a>
     @if (session('successMsg'))
         <div class="alert alert-success m-t-15" role="alert">
@@ -29,7 +29,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        All Catigories
+                        Список Служений
                         <span class="badge bg-green">{{ $categories->count() }}</span>
                     </h2>
                 </div>
@@ -38,22 +38,22 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Name</th>
-                                    <th>Post Count</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Название</th>
+                                    <th>Кол - во постов</th>
+                                    <th>Создано</th>
+                                    <th>Изменено</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Count</th>
-                                    <th>Name</th>
-                                    <th>Post Count</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Название</th>
+                                    <th>Кол - во постов</th>
+                                    <th>Создано</th>
+                                    <th>Изменено</th>
+                                    <th>Действия</th>
                                 </tr>
                             </tfoot>
 

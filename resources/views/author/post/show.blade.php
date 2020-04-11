@@ -8,17 +8,17 @@
 
 @section('content')
 <div class="container-fluid">
-    <a class="btn btn-danger m-b-15 waves-effect" href="{{ route('author.post.index') }}">BACK</a>
+    <a class="btn btn-danger m-b-15 waves-effect" href="{{ route('author.post.index') }}">НАЗАД</a>
     
     @if ($post->is_approved == false)
     <button type="button" class="btn btn-success pull-right">
         <i class="material-icons">done</i>
-        <span>Approve</span>
+        <span>Одобрить</span>
     </button>
     @else
     <button type="button" class="btn btn-success pull-right" disabled>
         <i class="material-icons">done</i>
-        <span>Approved</span>
+        <span>Одобрено</span>
     </button>
     @endif
     <div class="row clearfix">
@@ -27,7 +27,7 @@
                 <div class="header">
                     <h2>
                     {{ $post->title}}
-                    <small>Posted By <strong><a href="">{{ $post->user->name }}</a></strong> on {{ $post->created_at->toFormattedDateString() }}</small>
+                    <small>Автор <strong><a href="">{{ $post->user->name }}</a></strong>  {{ $post->created_at->toFormattedDateString() }}</small>
                     </h2>
 
                 </div>
@@ -40,7 +40,7 @@
             <div class="card">
                 <div class="header bg-cyan">
                     <h2>
-                    Categories
+                        Служение
                     </h2>
                 </div>
                 <div class="body">
@@ -52,7 +52,7 @@
             <div class="card">
                 <div class="header bg-green">
                     <h2>
-                    Tags
+                        Тэги
                     </h2>
                 </div>
                 <div class="body">
@@ -64,7 +64,7 @@
             <div class="card">
                 <div class="header bg-amber">
                     <h2>
-                    Image
+                    Картинка
                     </h2>
                 </div>
                 <div class="body">
