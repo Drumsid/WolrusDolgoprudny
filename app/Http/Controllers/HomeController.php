@@ -45,6 +45,7 @@ class HomeController extends Controller
             'email' => 'required|email',
             'phone' => 'required|regex:/^[0-9]{11}$/',
             'msg' => 'required',
+            'check' => 'required',
         ]);
         // return dd($request->all());
 

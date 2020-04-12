@@ -12,10 +12,10 @@
                     <br>
                     <br>
                     <ul class="btm-icons">
-                        <li><a class="icon-facebook" href="https://www.facebook.com/woldolgoprudny/"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a class="icon-instagram" href="https://www.instagram.com/woldolgoprudny/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                        <li><a class="icon-vk" href="https://vk.com/wol_dolgoprudny"><ion-icon name="logo-vk"></ion-icon></a></li>
-                        <li><a class="icon-youtube"href="https://www.youtube.com/channel/UCvFaJA6Ja8gV5sDplTuYsVQ"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                        <li><a target="_blank" class="icon-facebook" href="https://www.facebook.com/woldolgoprudny/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a target="_blank" class="icon-instagram" href="https://www.instagram.com/woldolgoprudny/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a target="_blank" class="icon-vk" href="https://vk.com/wol_dolgoprudny"><ion-icon name="logo-vk"></ion-icon></a></li>
+                        <li><a target="_blank" class="icon-youtube"href="https://www.youtube.com/channel/UCvFaJA6Ja8gV5sDplTuYsVQ"><ion-icon name="logo-youtube"></ion-icon></a></li>
                         
                     </ul>
 
@@ -52,7 +52,9 @@
 
                 </div><!-- footer-section -->
             </div><!-- col-lg-4 col-md-6 --> --}}
-            {{-- ================================================== --}}
+
+            {{-- =============== modal form =================================== --}}
+
             {{-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -92,12 +94,42 @@
                             <label for="exampleFormControlTextarea1">Введите сообщение</label>
                             <textarea name="msg" class="form-control" id="exampleFormControlTextarea1" rows="3">{{ old('msg') }}</textarea>
                           </div>
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="" id="exampleCheck1" name="check" value="1">
+                            <label class="" for="exampleCheck1">СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ <a id="butId" class="formLink" href="">[?]</a></label>
+                          </div>
+                          <div id="first" class="my-hide-form">
+                            <div class="form-top-link">
+                              <a href="#" id="close-form"><ion-icon name="close-circle-outline"></ion-icon></a>
+                            </div>
+                            
+                            Я даю свое согласие на обработку персональных данных, указанных в анкете, на неопределенный срок (сбор, накопление, хранение, уточнение, систематизация как на бумажном носителе, так и с использованием информационных систем) Местной религиозной организации Библейский центр христиан веры евангельской «Слово жизни» (далее оператор) ОГРН – 1037739249569, ИНН – 7726025431, для получения информационных писем/бюллетеней, журналов и открыток, при условии, что оператор будет хранить мои персональные данные, соблюдая требования законодательства РФ об обеспечении конфиденциальности. Я предупрежден(-а), что мои ФИО и почтовый адрес в процессе почтовой рассылки, возможно, будут переданы иной организации, имеющей право на почтовую рассылку.
+                          
+                          </div>
+                          
+                          <script>
+                            let btn = document.getElementById("butId");
+                            let close = document.getElementById("close-form");
+                            btn.onclick = function() { 
+                              event.preventDefault();
+                              document.getElementById("first").classList.toggle("my-hide-form");
+                              document.getElementById("first").classList.toggle("my-vision-form");
+                            }
+                            close.onclick = function() { 
+                              event.preventDefault();
+                              document.getElementById("first").classList.toggle("my-hide-form");
+                              document.getElementById("first").classList.toggle("my-vision-form");
+                            }
+                            </script>
                           <button type="submit" class="btn btn-primary">Отправить</button>
                         </form>
                     </div>
                   </div>
                 </div>
               </div> --}}
+
+              {{-- =============== modal form =================================== --}}
+              
         </div><!-- row -->
     </div><!-- container -->
 </footer>
