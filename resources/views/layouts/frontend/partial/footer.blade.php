@@ -52,7 +52,8 @@
 
                 </div><!-- footer-section -->
             </div><!-- col-lg-4 col-md-6 --> --}}
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            {{-- ================================================== --}}
+            {{-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -94,12 +95,9 @@
                           <button type="submit" class="btn btn-primary">Отправить</button>
                         </form>
                     </div>
-                    {{-- <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                    </div> --}}
                   </div>
                 </div>
-              </div>
+              </div> --}}
         </div><!-- row -->
     </div><!-- container -->
 </footer>

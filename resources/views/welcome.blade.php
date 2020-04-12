@@ -110,18 +110,18 @@
               {{-- <a href="#" class="btn btn-custom">Go somewhere</a> --}}
             <p class="phone-news">Записаться на консультацию можно по телефону <strong><a href="tel:+79256518880">8 (925) 651-88-80</a></strong> или нажать на кнопку ниже.</p>
             <div>
-              <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Нужна молитва?</button>
+              {{-- <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Нужна молитва?</button> --}}
             </div>  
           </div>
           </div>
-          <div class="card card-border">
+          {{-- <div class="card card-border">
             <img src="{{ asset('assets/frontend/images/17.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Служение старшее поколение.</h5>
               <p class="card-text mb-3">Жизнь в служении «Старшее поколение» с пенсионным возрастом только начинается! Если Вы молоды сердцем, добро пожаловать в служение «Старшее поколение»! Здесь Вы будете вовлечены в жизнь церкви, окружены заботой и молитвенной поддержкой. Мы рады Вам!</p>
-              {{-- <p class="phone-news">Записаться на консультацию можно по телефону <strong><a href="tel:+79256518880">8 (925) 651-88-80</a></strong></p> --}}
+             
             </div>
-          </div>
+          </div> --}}
           <div class="card card-border">
             <img src="{{ asset('assets/frontend/images/9.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
@@ -175,7 +175,7 @@
               <h5 class="card-title">«Никто не должен лечь спать голодным»</h5>
               <p class="card-text mb-3">
                 Мы призваны заботиться о наших братьях и сестрах, которые находятся в трудной ситуации, и помогать им продуктами, одеждой и лекарствами.</p>
-<p>Вы можете принять участие в этом служении, принося с собой в церковь* продукты или добровольным пожертвованием.</p>
+<p>Вы можете принять участие в этом служении, продуктами или добровольным пожертвованием.</p>
 <p class="mt-3 mb-11">Предпочтительные продукты</p>
 <ul class="mb-3">
   <li>крупы (греча, рис, манка, перловка), макаронные изделия</li>

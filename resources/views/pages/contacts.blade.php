@@ -38,10 +38,10 @@
         <div class="col-md-2"></div>
         <div class="col-md-8 text-padding pastor-head-text">
           <h2>Расписание Служений</h2>
-          <p>Каждое воскресенье в 11-00 мы ждем тебя на богослужении -актуальная проповедь, молитва и прославление наполняют жизнь верой,надеждой и любовью к Богу.</p>
+          <p>Каждое воскресенье в 11-00 на богослужении - актуальная проповедь, молитва и прославление наполняют жизнь верой,надеждой и любовью к Богу.</p>
           <p>Если у Вас есть молитвенная просьба, вопрос, или Вы хотите поделиться с другими людьми свидетельством или благодарением, напишите нам, и мы с радостью ответим на Ваш вопрос, а молитвенная группа и другие члены церкви* поддержат Вас в молитвах.</p>
           <div>
-            <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Заполнить форму</button>
+            {{-- <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Заполнить форму</button> --}}
           </div>  
         </div>
         <div class="col-md-2"></div>
@@ -51,7 +51,7 @@
   
   
   
-  <div class="container-fluid map-box">
+  {{-- <div class="container-fluid map-box">
     <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A523c207610ce15f2a73a548cd1c49860617b610517f25429d90aecb4355ae855&amp;source=constructor" width="100%" height="450" frameborder="0" scroll = false ></iframe> -->
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A523c207610ce15f2a73a548cd1c49860617b610517f25429d90aecb4355ae855&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
     <div class="map-title">
@@ -80,7 +80,7 @@
   
       </div>
     </div>
-  </div> 
+  </div>  --}}
   
   <div class="container-fluid">
     <div class="container">
