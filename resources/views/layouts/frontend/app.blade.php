@@ -39,6 +39,29 @@
 <script src="{{ asset('assets/frontend/js/bootstrap.js') }}"></script>
 
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script>
+    // (function($) {
+        function backToTop() {
+
+          let button = $('.back-to-top');
+
+          $(window).on('scroll', () => {
+            if ($(this).scrollTop() >= 50) {
+              button.fadeIn();
+            } else {
+              button.fadeOut();
+            }
+          });
+
+          button.on('click', (e) => {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 1000);
+          })
+        }
+
+        backToTop();
+    // })(jQuery);
+  </script>
 @stack('js')
 
 
