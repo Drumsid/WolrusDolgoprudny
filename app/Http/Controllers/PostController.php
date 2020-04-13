@@ -32,7 +32,7 @@ class PostController extends Controller
         // $randomPosts = Post::all()->where('id', '!=', $post->id)->random(3);
         $randomPosts = Post::approved()->published()->where('id', '!=', $post->id)->take(3)->inRandomOrder()->get();
         $tags = Tag::all();
-        return view('post', compact('post', 'randomPosts', 'tags'));
+        return view('post2', compact('post', 'randomPosts', 'tags'));
     }
 
     public function postByCategory($slug)

@@ -62,7 +62,7 @@ html {
 }
 
 body {
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Whitney-Book";
     width: 100%;
     height: 100%;
@@ -85,13 +85,7 @@ p,
 a,
 ul,
 span,
-li {
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
-    font-family: "Whitney-Book";
-}
-
+li,
 img {
     margin: 0;
     padding: 0;
@@ -265,6 +259,7 @@ header {
     align-items: center;
 }
 
+
 /* ---------------------------------
 3. MENU
 --------------------------------- */
@@ -369,15 +364,14 @@ header .src-area .src-btn {
 .menu-nav-icon {
     display: none;
     height: 60px;
-    width: 70px;
+    width: 50px;
     text-align: center;
-    line-height: 82px;
+    line-height: 60px;
     cursor: pointer;
     position: absolute;
     right: 0;
-    font-size: 3em;
+    font-size: 1.8em;
 }
-
 
 
 /* ---------------------------------
@@ -387,14 +381,8 @@ header .src-area .src-btn {
 .slider {
     height: 400px;
     width: 100%;
+    background-image: url(../../images/slider-1-1600x900.jpg);
     background-size: cover;
-    margin: 0;
-    background-image: url(../../images/category-1.jpg);
-}
-
-.slider .title {
-    color: #fff;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
 }
 
 
@@ -402,12 +390,6 @@ header .src-area .src-btn {
 /* ---------------------------------
 5. BLOG POST
 --------------------------------- */
-
-.post-area {
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
-    border-bottom: 1px solid #eee;
-    background: #fff;
-}
 
 .post-area .post-info {
     position: relative;
@@ -442,15 +424,25 @@ header .src-area .src-btn {
 
 
 /* ---------------------------------
-6. MAIN POST ( LEF AREA )
+6. MAIN POST
 --------------------------------- */
 
 .main-post {
-    border-right: 1px solid #ddd;
+    margin-top: -100px;
+    padding: 50px 0px 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+    border-bottom: 1px solid #eee;
+    background: #fff;
 }
 
-.main-post .blog-post-inner {
-    padding-right: 30px;
+.main-post .post-top-area,
+.main-post .post-bottom-area {
+    margin: 0 70px;
+}
+
+.main-post .pre-title {
+    margin-bottom: 20px;
+    color: #777;
 }
 
 .main-post .title {
@@ -483,7 +475,7 @@ header .src-area .src-btn {
 
 .main-post .post-icons-area {
     margin: 30px 0;
-    padding: 30px 30px 30px 0;
+    padding: 30px 0;
     overflow: hidden;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -528,90 +520,7 @@ header .src-area .src-btn {
 
 
 /* ---------------------------------
-7. SIDEBAR AREA
---------------------------------- */
-
-.info-area .sidebar-area {
-    padding: 0 30px 30px;
-    margin: 0 0 30px;
-    border-bottom: 1px solid #eee;
-}
-
-
-/* ABOUT AREA */
-
-.info-area .title {
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-
-/* SUBSCRIBE AREA */
-
-.info-area .input-area {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    box-shadow: 0px 0px 1px #bbb;
-    background: #F5F7F6;
-}
-
-.info-area .input-area .email-input {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 0 70px 0 20px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-}
-
-.info-area .input-area .email-input:focus {
-    box-shadow: 0px 0px 1px #aaa;
-}
-
-.info-area .input-area .submit-btn {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 50px;
-    background: none;
-    border: 0;
-    outline: 0;
-    margin-right: 10px;
-    opacity: .8;
-    cursor: pointer;
-    transition: all .2s;
-}
-
-
-
-/* TAG AREA */
-
-.info-area .tag-area {
-    padding: 0 30px;
-}
-
-.tag-area>ul>li>a {
-    padding: 7px 12px;
-    float: left;
-    margin: 0 5px 5px 0;
-    border: 1px solid #eee;
-    background: #F5F6F8;
-}
-
-.tag-area>ul>li>a:hover {
-    background: none;
-}
-
-
-
-/* ---------------------------------
-8. RECOMENEDED AREA
+7. RECOMENEDED AREA
 --------------------------------- */
 
 .recomended-area .row div[class^="col"] {
@@ -689,7 +598,7 @@ header .src-area .src-btn {
 
 
 /* ---------------------------------
-9. POST COMMENT
+8. POST COMMENT
 --------------------------------- */
 
 .comment-form {
@@ -813,7 +722,7 @@ header .src-area .src-btn {
 
 
 /* ---------------------------------
-10. FOOTER
+9. FOOTER
 --------------------------------- */
 
 footer {
@@ -836,11 +745,9 @@ footer .footer-section ul>li {
     margin-top: 10px;
 }
 
-
 footer .copyright {
-    margin: 10px 0;
+    margin: 10px 0 20px;
 }
-
 
 footer .icons>li>a {
     height: 40px;
@@ -849,7 +756,6 @@ footer .icons>li>a {
     line-height: 40px;
     text-align: center;
     transition: all .3s;
-    font-size: 1.2em;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
     background: #498BF9;
     color: #fff;
@@ -859,7 +765,6 @@ footer .icons>li>a:hover {
     transform: translateY(-2px);
     box-shadow: 5px 10px 20px rgba(0, 0, 0, .3);
 }
-
 
 footer .input-area {
     position: relative;
