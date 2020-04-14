@@ -19,7 +19,13 @@
 	<link href="{{ asset('assets/frontend/css/swiper.css') }}" rel="stylesheet">
 
 	<link href="{{ asset('assets/frontend/css/ionicons.css') }}" rel="stylesheet">
-	<link href="{{ asset('assets/frontend/css/home/main.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/frontend/css/home/main.css') }}" rel="stylesheet">
+  <style>
+    .form-star {
+      color: #EAA33E;
+      font-size: 20px;
+    }
+  </style>
 
     
     @stack('css')

@@ -72,7 +72,9 @@
                           @csrf
                           <div class="form-group">
                             <p>Оставьте сообщение или напишите молитвенную нужду!</p>
-                            <label for="exampleFormControlInput1">Введите имя</label>
+                            <p>Все поля отмеченые звездочкой <span class="form-star">*</span> обязательны для заполнения </p>
+                            <hr>
+                            <label for="exampleFormControlInput1">Введите имя<span class="form-star">*</span></label>
                             <input 
                             name="name" 
                             type="text" 
@@ -85,20 +87,20 @@
                             >
                           </div>
                           <div class="form-group">
-                            <label for="exampleFormControlInput12">Введите email</label>
+                            <label for="exampleFormControlInput12">Введите email<span class="form-star">*</span></label>
                             <input name="email" type="email" class="form-control" id="exampleFormControlInput12" placeholder="name@example.com" value="{{ old('email') }}">
                           </div>
                           <div class="form-group">
-                            <label for="exampleFormControlInput13">Tелефон в формате 8xxxxxxxxxx</label>
+                            <label for="exampleFormControlInput13">Tелефон в формате 8xxxxxxxxxx<span class="form-star">*</span></label>
                             <input name="phone" type="tel" class="form-control" id="exampleFormControlInput13" placeholder="8xxxxxxxxxx" value="{{ old('phone') }}">
                           </div>
                           <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Введите сообщение</label>
+                            <label for="exampleFormControlTextarea1">Введите сообщение<span class="form-star">*</span></label>
                             <textarea name="msg" class="form-control" id="exampleFormControlTextarea1" rows="3">{{ old('msg') }}</textarea>
                           </div>
                           <div class="form-group form-check">
                             <input type="checkbox" class="" id="exampleCheck1" name="check" value="1">
-                            <label class="" for="exampleCheck1">СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ <a id="butId" class="formLink" href="">[?]</a></label>
+                            <label class="" for="exampleCheck1">СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ <a id="butId" class="formLink" href="">[?]</a><span class="form-star">*</span></label>
                           </div>
                           <div id="first" class="my-hide-form">
                             <div class="form-top-link">
