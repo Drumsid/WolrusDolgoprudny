@@ -48,9 +48,12 @@ class HomeController extends Controller
             'check' => 'required',
         ]);
         // return dd($request->all());
-
-        $msg = "Сообщения с сайта Слово Жизни Долгопрудный \r\nИмя: " . $request->name . "\r\n" . "Почта: " . $request->email . "\r\n" . "Телефон: " . $request->phone . "\r\n" . "Сообщение: " . $request->msg . "\r\n ";
-        mail('den-sidnay@yandex.ru', 'My Subject', $msg);
-        return redirect()->back()->with('successMsg', 'Сообщение успешно отправлено!');
+        if (request('check') && request('check') == 1) {
+            $msg = "Сообщения с сайта Слово Жизни Долгопрудный \r\nИмя: " . $request->name . "\r\n" . "Почта: " . $request->email . "\r\n" . "Телефон: " . $request->phone . "\r\n" . "Сообщение: " . $request->msg . "\r\n ";
+            mail('den-sidnay@yandex.ru', 'My Subject', $msg);
+            return redirect()->back()->with('successMsg', 'Сообщение успешно отправлено!');
+        } else {
+            return redirect()->back()->with('successErr', 'Сообщение не отправлено!');
+        }
     }
 }

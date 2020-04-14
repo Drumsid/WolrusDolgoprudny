@@ -53,10 +53,15 @@
 <div class="container-fluid">
     <div class="container mb-3">
       @if (session('successMsg'))
-      <div class="alert alert-success mt-5" role="alert">
-      {{ session('successMsg') }}  
-      </div> 
-  @endif
+        <div class="alert alert-success mt-5" role="alert">
+          {{ session('successMsg') }}  
+        </div> 
+      @endif
+      @if (session('successErr'))
+        <div class="alert alert-danger mt-5" role="alert">
+          {{ session('successErr') }}  
+        </div> 
+      @endif
   @foreach ($errors->all() as $error)
       <div class="alert alert-danger mt-5" role="alert">
           {{ $error }}  
@@ -110,7 +115,7 @@
               {{-- <a href="#" class="btn btn-custom">Go somewhere</a> --}}
             <p class="phone-news">Записаться на консультацию можно по телефону <strong><a href="tel:+79256518880">8 (925) 651-88-80</a></strong> или нажать на кнопку ниже.</p>
             <div>
-              {{-- <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Нужна молитва?</button> --}}
+              <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Нужна молитва?</button>
             </div>  
           </div>
           </div>

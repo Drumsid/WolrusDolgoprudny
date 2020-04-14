@@ -19,6 +19,11 @@
       {{ session('successMsg') }}  
       </div> 
   @endif
+  @if (session('successErr'))
+  <div class="alert alert-danger mt-5" role="alert">
+    {{ session('successErr') }}  
+  </div> 
+@endif
   @foreach ($errors->all() as $error)
       <div class="alert alert-danger" role="alert">
           {{ $error }}  
@@ -41,7 +46,7 @@
           <p>Каждое воскресенье в 11-00 на богослужении - актуальная проповедь, молитва и прославление наполняют жизнь верой,надеждой и любовью к Богу.</p>
           <p>Если у Вас есть молитвенная просьба, вопрос, или Вы хотите поделиться с другими людьми свидетельством или благодарением, напишите нам, и мы с радостью ответим на Ваш вопрос, а молитвенная группа и другие члены церкви* поддержат Вас в молитвах.</p>
           <div>
-            {{-- <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Заполнить форму</button> --}}
+            <button type="button" class="btn btn-custom mt-2" data-toggle="modal" data-target="#exampleModal">Заполнить форму</button>
           </div>  
         </div>
         <div class="col-md-2"></div>
