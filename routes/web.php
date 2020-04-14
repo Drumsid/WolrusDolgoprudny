@@ -15,6 +15,7 @@ Route::get('/', 'HomeController@index')->name('mainhome');
 
 Route::get('/testing', 'HomeController@test')->name('test')->middleware('test');
 Route::post('/feedback', 'HomeController@feedback')->name('feedback');
+Route::get('/online', 'HomeController@online')->name('online');
 
 
 Route::post('subscriber', 'SubscriberController@store')->name('subscriber.store');

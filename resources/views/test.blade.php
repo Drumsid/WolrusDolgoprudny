@@ -29,9 +29,16 @@
         @endforeach
         <div class="row">
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+{{-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     Launch demo modal
-  </button>
+  </button> --}}
+  <h2>Почему в церкви разводятся?/психолог Анна Мицкевич</h2>
+  <div class="flex-video mt-5" style="width:100%;">
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/WWFrVNNyA1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  {{-- <iframe allowfullscreen="" frameborder="0" height="360" src="//www.youtube.com/embed/live_stream?channel=UCvFaJA6Ja8gV5sDplTuYsVQ" width="640"></iframe>  --}}
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

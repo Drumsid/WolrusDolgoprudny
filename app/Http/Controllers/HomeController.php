@@ -38,6 +38,11 @@ class HomeController extends Controller
         return view('test');
     }
 
+    public function online()
+    {
+        return view('online');
+    }
+
     public function feedback(Request $request)
     {
         $this->validate($request, [
