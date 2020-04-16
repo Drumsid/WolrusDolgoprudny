@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8 text-padding pastor-text-box">
-          <p><span>Анна Мицкевич </span> - прекрасная жена и мать, профессиональный психолог. Сюда надо еще текст строчек четыре или пять.</p>
+          <p><span>Анна Мицкевич </span> - прекрасная жена и мать, профессиональный психолог.</p>
         </div>
         <div class="col-md-2">
           <div class="img-round-box text-center text-padding">
