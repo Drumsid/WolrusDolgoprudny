@@ -26,13 +26,15 @@
 <div class="wrapp-online">
     <h2 class="text-center">Онлайн трансляция.</h2>
     <div class="flex-video mt-5">
-        <p>Трансляция еще не началась.</p>
         {{-- <div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/WWFrVNNyA1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div> --}}
-      </div>
-      {{-- <p class="text-center">Если видео не воспроизводится, подождите или обновите страницу.</p> --}}
+    </div>
+    {{-- <p class="text-center">Если видео не воспроизводится, подождите или обновите страницу.</p> --}}
+    <p class="text-center">Трансляция проходит по воскресеньям в 11:00 по Московскому времени.</p>
+    <p class="text-center">Трансляция еще не началась.</p>
 </div>
+
 
 
 @endsection

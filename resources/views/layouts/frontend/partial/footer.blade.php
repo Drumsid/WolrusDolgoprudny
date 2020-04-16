@@ -37,7 +37,7 @@
                 <p>© 2018 * Централизованная религиозная организация Содружество церквей христиан веры евангельской (пятидесятников) «Слово жизни»</p>
                 <p>ИНН 7719286496, ОГРН 1037739246951, бланк свидетельства Министерства юстиции ЦА 03303, учетный № 0011010266, дата выдачи 13.04.2016г.</p>
             </div>
-            <a style="color:white;" href="{{ asset('assets/frontend/files/personalData.pdf') }}" download="">«Политика в отношении обработки персональных данных»</a>
+            {{-- <a style="color:white;" href="{{ asset('assets/frontend/files/personalData.pdf') }}" download="">«Политика в отношении обработки персональных данных»</a> --}}
             
             {{-- <div class="col-lg-4 col-md-6">
                 <div class="footer-section">
@@ -57,7 +57,7 @@
 
             {{-- =============== modal form =================================== --}}
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            {{-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -137,7 +137,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> --}}
 
               {{-- =============== modal form =================================== --}}
               
