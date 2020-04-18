@@ -55,6 +55,7 @@
       </div>
     </div>
   </div>
+  {{-- {{ print_r($_GET)}} --}}
         </div><!-- row -->
 
     </div><!-- container -->
