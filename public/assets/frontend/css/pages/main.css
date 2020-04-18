@@ -547,6 +547,11 @@ p {
     margin: 0 5px;
 }
 
+.yellow-border {
+    border: 5px solid #eaa33e;
+    border-radius: 5px;
+}
+
 /*.ymaps-2-1-72-user-selection-none, 
  {
 	display: none;

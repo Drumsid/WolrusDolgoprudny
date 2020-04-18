@@ -18,13 +18,21 @@
         min-height: 550px;
         padding: 80px;
     }
-
+.youtube-img{
+    width: 50px;
+}
 </style>
 @endpush
 
 @section('content')
 <div class="wrapp-online">
     <h2 class="text-center">Онлайн трансляция.</h2>
+    <h3 class="text-center">Трансляция начнется ровно в 11:00 по Москве!</h3>
+    <h4 class="text-center">Если в 11:02 трансляция не началась, обновите страницу!</h4>
+    <h4 class="text-center">И нажмите 
+        <img class="youtube-img" src="{{ asset('assets/frontend/images/youtubeRed.png') }}" alt=""> или
+        <img class="youtube-img" src="{{ asset('assets/frontend/images/youtubeBlack.png') }}" alt="">
+    </h4>
     <div class="flex-video mt-5">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZHntCxsYmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
