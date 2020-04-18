@@ -28,7 +28,7 @@
     <div class="flex-video mt-5">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZHntCxsYmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p class="text-center">Для более удобного просмотра с телефона, после начала видео поверните телефон горизонтально.</p>
+    <p class="mt-3 text-center">Для более удобного просмотра с телефона, после начала видео поверните телефон горизонтально.</p>
     {{-- <p class="text-center">Если видео не воспроизводится, подождите или обновите страницу.</p> --}}
     <p class="text-center">Трансляция проходит по воскресеньям в 11:00 по Московскому времени.</p>
     {{-- <p class="text-center">Трансляция еще не началась.</p> --}}
