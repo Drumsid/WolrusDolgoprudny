@@ -21,6 +21,24 @@
 .youtube-img{
     width: 50px;
 }
+.thumb-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+}
+.thumb-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border-width: 0;
+  outline-width: 0;
+  margin: auto;
+}
 </style>
 @endpush
 
@@ -33,7 +51,7 @@
         <img class="youtube-img" src="{{ asset('assets/frontend/images/youtubeRed.png') }}" alt=""> или
         <img class="youtube-img" src="{{ asset('assets/frontend/images/youtubeBlack.png') }}" alt="">
     </h4>
-    <div class="flex-video mt-5">
+    <div class="flex-video mt-5 {{-- thumb-wrap --}}">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZHntCxsYmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <p class="mt-3 text-center">Для более удобного просмотра с телефона, после начала видео поверните телефон горизонтально.</p>

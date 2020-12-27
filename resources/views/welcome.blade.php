@@ -106,7 +106,7 @@
             </div>
           </div>
           <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/12.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/family.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Пасторы Церкви</h5>
               <p class="card-text mb-3">Андрей Мицкевич - пастор, проповедник, учитель Библии. Получил образование в Российской Христианской Гуманитарной Академии.</p>
@@ -134,7 +134,7 @@
             </div>
           </div> --}}
           <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/9.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/sistres.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Служение сестер</h5>
               <p class="card-text mb-3">Сестры собираются вместе, обсуждают писание, жизенные ситуации, деляться опытом.</p>
@@ -162,7 +162,7 @@
             </div>
           </div>
           <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/4.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/matsOla.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Старший пастор</h5>
               <p class="card-text mb-3">Маттс-Ола Исхоел − президент и старший пастор церкви «Слово жизни»* в Москве, первый заместитель председателя Российского Объединенного Союза Христиан Веры Евангельской С.В. Ряховского по межконфессиональным вопросам, председатель Духовного Совета РОСХВЕ. </p>
@@ -173,7 +173,7 @@
 
         <div class="col-md-4">
             <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/13.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/pastor.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Воскресное Богослужение</h5>
               <p class="card-text mb-3">Каждое воскресенье в 11-00 мы ждем тебя на богослужении -актуальная проповедь, молитва и прославление наполняют жизнь верой,надеждой и любовью к Богу.</p>
@@ -211,7 +211,7 @@
             </div>
           </div> --}}
           <div class="card card-border">
-            <img src="{{ asset('assets/frontend/images/8.jpg') }}" class="card-img-top" alt="...">
+            <img src="{{ asset('assets/frontend/images/brathers.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Братская</h5>
               <p class="card-text mb-3">Братья собираются вместе. Преломляют хлеб, обсуждают вопросы,  ценности. Вместе молятся за нужды.</p>
