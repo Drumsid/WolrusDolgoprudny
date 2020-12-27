@@ -99,12 +99,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="card yellow-border">
+          {{-- <div class="card yellow-border">
             <div class="card-body card-body-padding">
               <h5 class="card-title">Онлайн трансляция</h5>
               <a href="{{ route('online') }}" class="btn btn-custom">Смотреть</a>
             </div>
-          </div>
+          </div> --}}
           <div class="card card-border">
             <img src="{{ asset('assets/frontend/images/family.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body card-body-padding">
