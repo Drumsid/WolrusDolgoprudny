@@ -12,8 +12,6 @@
                     <br>
                     <br>
                     <ul class="btm-icons">
-                        <li><a target="_blank" class="icon-facebook" href="https://www.facebook.com/woldolgoprudny/"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a target="_blank" class="icon-instagram" href="https://www.instagram.com/woldolgoprudny/"><ion-icon name="logo-instagram"></ion-icon></a></li>
                         <li><a target="_blank" class="icon-vk" href="https://vk.com/wol_dolgoprudny"><ion-icon name="logo-vk"></ion-icon></a></li>
                         <li><a target="_blank" class="icon-youtube"href="https://www.youtube.com/channel/UCvFaJA6Ja8gV5sDplTuYsVQ"><ion-icon name="logo-youtube"></ion-icon></a></li>
                         
